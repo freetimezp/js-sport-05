@@ -1,3 +1,4 @@
 https://www.youtube.com/watch?v=gBTvJ2oSC4U
 https://ionic.io/ionicons
 https://fonts.google.com/
+https://swiperjs.com/
