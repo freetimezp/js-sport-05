@@ -273,3 +273,53 @@ header .logo {
     background: var(--primary);
 }
 
+.banner .content {
+    position: absolute;
+    max-width: 600px;
+    left: 57%;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    z-index: 100;
+    transition: all 0.5s ease-in-out;
+}
+
+.banner .content.active {
+    transform: translateY(-50%) scale(0);
+}
+
+.banner .content h2 {
+    font-size: 5em;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.banner .content p {
+    text-align: end;
+    color: var(--primary);
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.banner .content a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.1em;
+    color: #fff;
+    background: var(--primary);
+    padding: 10px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.5s ease-in-out;
+}
+
+.banner .content a:hover {
+    color: var(--primary);
+    background: transparent;
+}
+
