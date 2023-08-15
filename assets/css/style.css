@@ -352,4 +352,103 @@ header .logo {
     z-index: 1;
 }
 
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
 
+.bg-video.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.banner .video {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    width: 40%;
+    height: 150px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.banner .video video {
+    position: relative;
+    max-height: 150px;
+}
+
+.banner .video .services {
+    position: relative;
+    padding: 10px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.banner .video .services:hover::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 36, 72, 0.1);
+}
+
+.banner .video h3 {
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.banner .video p {
+    color: var(--primary);
+    font-size: 0.7em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.banner .video .play {
+    padding: 20px;
+    height: 100%;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+}
+
+.banner .video .play ion-icon {
+    font-size: 3em;
+    color: #fff;
+}
+
+.banner .video .play .close {
+    display: none;
+}
+
+.banner .video .play.active .close {
+    display: block;
+}
+
+.banner .video .play.active .open {
+    display: none;
+}
